@@ -1,0 +1,285 @@
+{
+  "id": "fnd-5196fc4e-21469907",
+  "title": "Damaged packaging complaints concentrate on warehouse WH-North",
+  "type": "recurring_issue",
+  "riskScore": 81.3,
+  "severity": "critical",
+  "businessImpact": "64 complaints affected, £8,137 of order value exposed, 62 customers involved. Risk score 81.3/100 driven by statistics (100% of that factor) and volume (100% of that factor).",
+  "summary": "64 of 86 damaged packaging complaints (74.4%) come from warehouse WH-North, which handles 30.0% of orders — a 2.48x lift.",
+  "verifiedFacts": [
+    {
+      "statement": "64 of 86 damaged packaging complaints (74.4%) involve warehouse WH-North.",
+      "metric": "complaint_share",
+      "value": 74.4
+    },
+    {
+      "statement": "warehouse WH-North accounts for 30.0% of all orders.",
+      "metric": "order_share",
+      "value": 30.0
+    },
+    {
+      "statement": "Lift is 2.48x the order baseline (z=8.97, p=0.0).",
+      "metric": "lift",
+      "value": 2.48
+    },
+    {
+      "statement": "Statistical test used 64 complaints against a baseline of 244 orders.",
+      "metric": "sample_size",
+      "value": 64
+    },
+    {
+      "statement": "92.2% of the affected rows involve courier MetroDash versus 27.0% of all orders (3.4x lift).",
+      "metric": "courier_share",
+      "value": 92.2
+    },
+    {
+      "statement": "100.0% of the affected rows involve warehouse WH-North versus 30.0% of all orders (3.3x lift).",
+      "metric": "warehouse_share",
+      "value": 100.0
+    },
+    {
+      "statement": "54.7% of the affected rows involve city Leeds versus 26.4% of all orders (2.1x lift).",
+      "metric": "city_share",
+      "value": 54.7
+    }
+  ],
+  "aiHypotheses": [
+    {
+      "statement": "A handling or transit problem specific to warehouse WH-North may be driving the concentration 74.4% of these complaints versus 30.0% of orders.",
+      "confidence": 0.6,
+      "reasoning": "Would be confirmed by a site or route audit of warehouse WH-North and by complaint notes mentioning handling damage. Would be rejected if the same product complains equally through other couriers or hubs."
+    },
+    {
+      "statement": "Part of the pattern may be a labelling or assignment shift rather than a real change in operations.",
+      "confidence": 0.35,
+      "reasoning": "Would be confirmed by comparing category labels and order-to-courier assignment rules with the period before the lift appeared. Would be rejected if labels and routing rules are unchanged."
+    }
+  ],
+  "evidenceRows": [
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:2",
+      "fields": {
+        "orderId": "ORD-10009",
+        "productId": "F-P025",
+        "productName": "Sports Bra",
+        "date": "2026-09-24",
+        "warehouse": "WH-North",
+        "city": "Leeds",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "The outer box arrived crushed and the packaging was torn."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:3",
+      "fields": {
+        "orderId": "ORD-10012",
+        "productId": "F-P001",
+        "productName": "Linen Shirt",
+        "date": "2026-09-25",
+        "warehouse": "WH-North",
+        "city": "Birmingham",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "The outer box arrived crushed and the packaging was torn."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:4",
+      "fields": {
+        "orderId": "ORD-10015",
+        "productId": "F-P013",
+        "productName": "Polo Shirt",
+        "date": "2026-10-04",
+        "warehouse": "WH-North",
+        "city": "Manchester",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "The outer box arrived crushed and the packaging was torn."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:5",
+      "fields": {
+        "orderId": "ORD-10020",
+        "productId": "F-P008",
+        "productName": "Wide-Leg Trousers",
+        "date": "2026-10-02",
+        "warehouse": "WH-North",
+        "city": "Leeds",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "Box was crushed on one side and the packaging tape was torn open."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:6",
+      "fields": {
+        "orderId": "ORD-10028",
+        "productId": "F-P016",
+        "productName": "Tailored Shorts",
+        "date": "2026-11-07",
+        "warehouse": "WH-North",
+        "city": "Leeds",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "Packaging was smashed in transit and the product box is dented."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:7",
+      "fields": {
+        "orderId": "ORD-10045",
+        "productId": "F-P024",
+        "productName": "Lounge Set",
+        "date": "2026-10-04",
+        "warehouse": "WH-North",
+        "city": "Leeds",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "Item arrived with damaged packaging, the seal was already broken."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:8",
+      "fields": {
+        "orderId": "ORD-10065",
+        "productId": "F-P025",
+        "productName": "Sports Bra",
+        "date": "2026-11-11",
+        "warehouse": "WH-North",
+        "city": "Leeds",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "The parcel arrived damaged and the packaging had leaked inside."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:9",
+      "fields": {
+        "orderId": "ORD-10084",
+        "productId": "F-P025",
+        "productName": "Sports Bra",
+        "date": "2026-11-08",
+        "warehouse": "WH-North",
+        "city": "Leeds",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "Item arrived with damaged packaging, the seal was already broken."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:10",
+      "fields": {
+        "orderId": "ORD-10099",
+        "productId": "F-P019",
+        "productName": "Wool Scarf",
+        "date": "2026-10-01",
+        "warehouse": "WH-North",
+        "city": "Manchester",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "The outer box arrived crushed and the packaging was torn."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:11",
+      "fields": {
+        "orderId": "ORD-10128",
+        "productId": "F-P013",
+        "productName": "Polo Shirt",
+        "date": "2026-10-21",
+        "warehouse": "WH-North",
+        "city": "London",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "The parcel arrived damaged and the packaging had leaked inside."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:12",
+      "fields": {
+        "orderId": "ORD-10131",
+        "productId": "F-P004",
+        "productName": "Denim Jacket",
+        "date": "2026-10-13",
+        "warehouse": "WH-North",
+        "city": "Leeds",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "The outer box arrived crushed and the packaging was torn."
+      }
+    },
+    {
+      "source": "complaints.csv",
+      "rowId": "complaints.csv:13",
+      "fields": {
+        "orderId": "ORD-10136",
+        "productId": "F-P019",
+        "productName": "Wool Scarf",
+        "date": "2026-09-24",
+        "warehouse": "WH-North",
+        "city": "London",
+        "courier": "MetroDash",
+        "category": "Damaged packaging",
+        "complaintText": "Box was crushed on one side and the packaging tape was torn open."
+      }
+    }
+  ],
+  "relatedEntities": {
+    "products": [
+      "F-P025",
+      "F-P001",
+      "F-P013",
+      "F-P008",
+      "F-P016",
+      "F-P024",
+      "F-P019",
+      "F-P004",
+      "F-P003",
+      "F-P022",
+      "F-P006",
+      "P-UNKNOWN"
+    ],
+    "locations": [
+      "WH-North"
+    ],
+    "couriers": [
+      "MetroDash",
+      "ParcelOne"
+    ],
+    "orders": [
+      "ORD-10009",
+      "ORD-10012",
+      "ORD-10015",
+      "ORD-10020",
+      "ORD-10028",
+      "ORD-10045",
+      "ORD-10065",
+      "ORD-10084",
+      "ORD-10099",
+      "ORD-10128",
+      "ORD-10131",
+      "ORD-10136"
+    ]
+  },
+  "recommendation": {
+    "action": "Audit warehouse WH-North handling for damaged packaging on the next dispatch cycle and review the 64 complaint orders with the warehouse owner.",
+    "why": "64 of 86 damaged packaging complaints (74.4%) involve warehouse WH-North. warehouse WH-North accounts for 30.0% of all orders.",
+    "preventive": "Add a damaged packaging checkpoint to warehouse WH-North and track its complaint share weekly.",
+    "priority": "urgent"
+  },
+  "status": "investigating",
+  "createdAt": "2026-11-18T05:45:10Z"
+}

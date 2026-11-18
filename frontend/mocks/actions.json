@@ -1,0 +1,40 @@
+{
+  "log": [
+    {
+      "id": "act-4217d5427e2e",
+      "findingId": "fnd-5196fc4e-dce775f2",
+      "findingTitle": "Damaged packaging complaints concentrate on courier MetroDash",
+      "decision": "approve",
+      "note": "Assign to the operations lead for review.",
+      "actor": "Ops manager",
+      "at": "2026-11-18T05:45:11Z"
+    },
+    {
+      "id": "act-62fd3db04f17",
+      "findingId": "fnd-5196fc4e-21469907",
+      "findingTitle": "Damaged packaging complaints concentrate on warehouse WH-North",
+      "decision": "status_changed",
+      "note": "Status changed to investigating.",
+      "actor": "Ops manager",
+      "at": "2026-11-18T05:45:11Z"
+    },
+    {
+      "id": "act-0dc1ab4e5674",
+      "findingId": "fnd-5196fc4e-dce775f2",
+      "findingTitle": "Damaged packaging complaints concentrate on courier MetroDash",
+      "decision": "task_created",
+      "note": "Review the flagged route with the carrier",
+      "actor": "Ops manager",
+      "at": "2026-11-18T05:45:11Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-dd8f59a34866",
+      "findingId": "fnd-5196fc4e-dce775f2",
+      "title": "Review the flagged route with the carrier",
+      "status": "open",
+      "createdAt": "2026-11-18T05:45:11Z"
+    }
+  ]
+}

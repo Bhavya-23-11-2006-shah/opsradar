@@ -1,0 +1,266 @@
+{
+  "missing": [
+    {
+      "file": "deliveries.csv",
+      "column": "deliveredDate",
+      "count": 117,
+      "rowIds": [
+        "deliveries.csv:22",
+        "deliveries.csv:38",
+        "deliveries.csv:42",
+        "deliveries.csv:47",
+        "deliveries.csv:48",
+        "deliveries.csv:54",
+        "deliveries.csv:55",
+        "deliveries.csv:62",
+        "deliveries.csv:64",
+        "deliveries.csv:68",
+        "deliveries.csv:73",
+        "deliveries.csv:79",
+        "deliveries.csv:80",
+        "deliveries.csv:84",
+        "deliveries.csv:91",
+        "deliveries.csv:98",
+        "deliveries.csv:101",
+        "deliveries.csv:111",
+        "deliveries.csv:118",
+        "deliveries.csv:119",
+        "deliveries.csv:120",
+        "deliveries.csv:122",
+        "deliveries.csv:134",
+        "deliveries.csv:135",
+        "deliveries.csv:152",
+        "deliveries.csv:159",
+        "deliveries.csv:176",
+        "deliveries.csv:181",
+        "deliveries.csv:200",
+        "deliveries.csv:207",
+        "deliveries.csv:212",
+        "deliveries.csv:218",
+        "deliveries.csv:220",
+        "deliveries.csv:228",
+        "deliveries.csv:233",
+        "deliveries.csv:237",
+        "deliveries.csv:247",
+        "deliveries.csv:248",
+        "deliveries.csv:257",
+        "deliveries.csv:272",
+        "deliveries.csv:287",
+        "deliveries.csv:306",
+        "deliveries.csv:336",
+        "deliveries.csv:345",
+        "deliveries.csv:349",
+        "deliveries.csv:357",
+        "deliveries.csv:360",
+        "deliveries.csv:366",
+        "deliveries.csv:369",
+        "deliveries.csv:399"
+      ],
+      "note": "117 of 812 values missing in deliveredDate (14.4%)."
+    },
+    {
+      "file": "deliveries.csv",
+      "column": "shippedDate",
+      "count": 31,
+      "rowIds": [
+        "deliveries.csv:38",
+        "deliveries.csv:54",
+        "deliveries.csv:101",
+        "deliveries.csv:111",
+        "deliveries.csv:118",
+        "deliveries.csv:119",
+        "deliveries.csv:120",
+        "deliveries.csv:200",
+        "deliveries.csv:207",
+        "deliveries.csv:212",
+        "deliveries.csv:220",
+        "deliveries.csv:272",
+        "deliveries.csv:336",
+        "deliveries.csv:357",
+        "deliveries.csv:369",
+        "deliveries.csv:440",
+        "deliveries.csv:454",
+        "deliveries.csv:457",
+        "deliveries.csv:475",
+        "deliveries.csv:541",
+        "deliveries.csv:545",
+        "deliveries.csv:595",
+        "deliveries.csv:627",
+        "deliveries.csv:694",
+        "deliveries.csv:712",
+        "deliveries.csv:724",
+        "deliveries.csv:734",
+        "deliveries.csv:737",
+        "deliveries.csv:740",
+        "deliveries.csv:743",
+        "deliveries.csv:763"
+      ],
+      "note": "31 of 812 values missing in shippedDate (3.8%)."
+    },
+    {
+      "file": "orders.csv",
+      "column": "amount",
+      "count": 6,
+      "rowIds": [
+        "orders.csv:202",
+        "orders.csv:239",
+        "orders.csv:444",
+        "orders.csv:462",
+        "orders.csv:636",
+        "orders.csv:805"
+      ],
+      "note": "6 of 820 values missing in amount (0.7%)."
+    },
+    {
+      "file": "orders.csv",
+      "column": "status",
+      "count": 5,
+      "rowIds": [
+        "orders.csv:198",
+        "orders.csv:371",
+        "orders.csv:382",
+        "orders.csv:563",
+        "orders.csv:590"
+      ],
+      "note": "5 of 820 values missing in status (0.6%)."
+    },
+    {
+      "file": "complaints.csv",
+      "column": "complaintText",
+      "count": 3,
+      "rowIds": [
+        "complaints.csv:25",
+        "complaints.csv:82",
+        "complaints.csv:113"
+      ],
+      "note": "3 of 150 values missing in complaintText (2.0%)."
+    }
+  ],
+  "duplicates": [
+    {
+      "file": "orders.csv",
+      "column": null,
+      "count": 8,
+      "rowIds": [
+        "orders.csv:814",
+        "orders.csv:815",
+        "orders.csv:816",
+        "orders.csv:817",
+        "orders.csv:818",
+        "orders.csv:819",
+        "orders.csv:820",
+        "orders.csv:821"
+      ],
+      "note": "8 exact duplicate rows found in orders.csv (first occurrence kept)."
+    },
+    {
+      "file": "orders.csv",
+      "column": "orderId",
+      "count": 8,
+      "rowIds": [
+        "orders.csv:814",
+        "orders.csv:815",
+        "orders.csv:816",
+        "orders.csv:817",
+        "orders.csv:818",
+        "orders.csv:819",
+        "orders.csv:820",
+        "orders.csv:821"
+      ],
+      "note": "8 rows repeat an orderId already seen in orders.csv."
+    },
+    {
+      "file": "complaints.csv",
+      "column": "orderId",
+      "count": 28,
+      "rowIds": [
+        "complaints.csv:81",
+        "complaints.csv:96",
+        "complaints.csv:97",
+        "complaints.csv:98",
+        "complaints.csv:99",
+        "complaints.csv:100",
+        "complaints.csv:101",
+        "complaints.csv:102",
+        "complaints.csv:103",
+        "complaints.csv:104",
+        "complaints.csv:105",
+        "complaints.csv:106",
+        "complaints.csv:107",
+        "complaints.csv:108",
+        "complaints.csv:109",
+        "complaints.csv:110",
+        "complaints.csv:111",
+        "complaints.csv:112",
+        "complaints.csv:113",
+        "complaints.csv:114",
+        "complaints.csv:115",
+        "complaints.csv:116",
+        "complaints.csv:122",
+        "complaints.csv:126",
+        "complaints.csv:129",
+        "complaints.csv:142",
+        "complaints.csv:148",
+        "complaints.csv:151"
+      ],
+      "note": "28 rows repeat an orderId already seen in complaints.csv."
+    }
+  ],
+  "inconsistent": [
+    {
+      "file": "orders.csv",
+      "column": "productId",
+      "count": 5,
+      "rowIds": [
+        "orders.csv:193",
+        "orders.csv:300",
+        "orders.csv:599",
+        "orders.csv:609",
+        "orders.csv:719"
+      ],
+      "note": "5 rows reference a productId missing from the inventory file."
+    },
+    {
+      "file": "deliveries.csv",
+      "column": "deliveredDate",
+      "count": 4,
+      "rowIds": [
+        "deliveries.csv:75",
+        "deliveries.csv:318",
+        "deliveries.csv:610",
+        "deliveries.csv:735"
+      ],
+      "note": "4 rows delivered before they shipped."
+    },
+    {
+      "file": "deliveries.csv",
+      "column": "deliveredDate",
+      "count": 1,
+      "rowIds": [
+        "deliveries.csv:597"
+      ],
+      "note": "1 rows carry a delivery date in the future."
+    },
+    {
+      "file": "inventory.csv",
+      "column": "stock",
+      "count": 2,
+      "rowIds": [
+        "inventory.csv:5",
+        "inventory.csv:11"
+      ],
+      "note": "2 rows carry negative stock."
+    },
+    {
+      "file": "reviews.csv",
+      "column": "rating",
+      "count": 1,
+      "rowIds": [
+        "reviews.csv:2"
+      ],
+      "note": "1 rows have a rating outside 1-5."
+    }
+  ],
+  "healthScore": 97.9,
+  "summary": "Cleaned 3272 rows across 6 file(s). 162 missing values, 8 duplicate rows, 13 inconsistent rows. Health score 97.9/100."
+}

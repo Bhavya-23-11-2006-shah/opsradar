@@ -1,0 +1,475 @@
+{
+  "kpis": {
+    "openIssues": 16,
+    "criticalRisks": 2,
+    "ordersAtRisk": 66,
+    "productsNearStockout": 3,
+    "complaintSpikes": 1
+  },
+  "trends": [
+    {
+      "date": "2026-09-24",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-09-25",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-09-26",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-09-27",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-09-28",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-09-29",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-09-30",
+      "complaints": 6,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-01",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-02",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-03",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-04",
+      "complaints": 4,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-05",
+      "complaints": 4,
+      "anomaly": true
+    },
+    {
+      "date": "2026-10-06",
+      "complaints": 2,
+      "anomaly": true
+    },
+    {
+      "date": "2026-10-07",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-08",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-09",
+      "complaints": 7,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-10",
+      "complaints": 3,
+      "anomaly": true
+    },
+    {
+      "date": "2026-10-11",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-12",
+      "complaints": 4,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-13",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-14",
+      "complaints": 3,
+      "anomaly": true
+    },
+    {
+      "date": "2026-10-15",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-16",
+      "complaints": 4,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-17",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-18",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-19",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-20",
+      "complaints": 4,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-21",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-22",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-23",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-24",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-25",
+      "complaints": 4,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-26",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-27",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-28",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-29",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-30",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-10-31",
+      "complaints": 5,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-01",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-02",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-03",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-04",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-05",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-06",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-07",
+      "complaints": 4,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-08",
+      "complaints": 1,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-09",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-10",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-11",
+      "complaints": 3,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-12",
+      "complaints": 2,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-13",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-14",
+      "complaints": 0,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-15",
+      "complaints": 9,
+      "anomaly": false
+    },
+    {
+      "date": "2026-11-16",
+      "complaints": 9,
+      "anomaly": true
+    },
+    {
+      "date": "2026-11-17",
+      "complaints": 9,
+      "anomaly": true
+    },
+    {
+      "date": "2026-11-18",
+      "complaints": 9,
+      "anomaly": true
+    }
+  ],
+  "categoryBreakdown": [
+    {
+      "category": "Damaged packaging",
+      "count": 86
+    },
+    {
+      "category": "Product quality",
+      "count": 32
+    },
+    {
+      "category": "Late delivery",
+      "count": 14
+    },
+    {
+      "category": "Wrong item",
+      "count": 7
+    },
+    {
+      "category": "Sizing",
+      "count": 7
+    },
+    {
+      "category": "Other",
+      "count": 4
+    }
+  ],
+  "riskDistribution": [
+    {
+      "group": "city",
+      "name": "Leeds",
+      "riskScore": 90.3
+    },
+    {
+      "group": "warehouse",
+      "name": "WH-North",
+      "riskScore": 89.9
+    },
+    {
+      "group": "courier",
+      "name": "MetroDash",
+      "riskScore": 89.1
+    },
+    {
+      "group": "city",
+      "name": "Birmingham",
+      "riskScore": 72.3
+    },
+    {
+      "group": "warehouse",
+      "name": "WH-Central",
+      "riskScore": 56.7
+    },
+    {
+      "group": "city",
+      "name": "Bristol",
+      "riskScore": 56.5
+    },
+    {
+      "group": "warehouse",
+      "name": "WH-South",
+      "riskScore": 47.4
+    },
+    {
+      "group": "courier",
+      "name": "ParcelOne",
+      "riskScore": 44.7
+    },
+    {
+      "group": "courier",
+      "name": "CityFreight",
+      "riskScore": 44.2
+    },
+    {
+      "group": "city",
+      "name": "London",
+      "riskScore": 44.0
+    },
+    {
+      "group": "city",
+      "name": "Manchester",
+      "riskScore": 39.4
+    },
+    {
+      "group": "city",
+      "name": "Glasgow",
+      "riskScore": 35.1
+    },
+    {
+      "group": "courier",
+      "name": "SwiftShip",
+      "riskScore": 31.9
+    }
+  ],
+  "topProblemProducts": [
+    {
+      "productId": "F-P016",
+      "productName": "Tailored Shorts",
+      "complaints": 37
+    },
+    {
+      "productId": "F-P004",
+      "productName": "Denim Jacket",
+      "complaints": 12
+    },
+    {
+      "productId": "F-P023",
+      "productName": "Tote Bag",
+      "complaints": 10
+    },
+    {
+      "productId": "F-P025",
+      "productName": "Sports Bra",
+      "complaints": 9
+    },
+    {
+      "productId": "F-P024",
+      "productName": "Lounge Set",
+      "complaints": 8
+    },
+    {
+      "productId": "F-P020",
+      "productName": "Sneakers",
+      "complaints": 8
+    },
+    {
+      "productId": "F-P013",
+      "productName": "Polo Shirt",
+      "complaints": 7
+    },
+    {
+      "productId": "F-P008",
+      "productName": "Wide-Leg Trousers",
+      "complaints": 6
+    }
+  ],
+  "filters": {
+    "products": [
+      "F-P001",
+      "F-P002",
+      "F-P003",
+      "F-P004",
+      "F-P005",
+      "F-P006",
+      "F-P007",
+      "F-P008",
+      "F-P009",
+      "F-P010",
+      "F-P011",
+      "F-P012",
+      "F-P013",
+      "F-P014",
+      "F-P015",
+      "F-P016",
+      "F-P017",
+      "F-P018",
+      "F-P019",
+      "F-P020",
+      "F-P021",
+      "F-P022",
+      "F-P023",
+      "F-P024",
+      "F-P025",
+      "P-UNKNOWN"
+    ],
+    "locations": [
+      "Birmingham",
+      "Bristol",
+      "Glasgow",
+      "Leeds",
+      "London",
+      "Manchester",
+      "WH-Central",
+      "WH-North",
+      "WH-South"
+    ],
+    "couriers": [
+      "CityFreight",
+      "MetroDash",
+      "ParcelOne",
+      "SwiftShip"
+    ],
+    "dateMin": "2026-09-24",
+    "dateMax": "2026-11-18"
+  }
+}

@@ -1,0 +1,2681 @@
+[
+  {
+    "id": "fnd-5196fc4e-dce775f2",
+    "title": "Damaged packaging complaints concentrate on courier MetroDash",
+    "type": "recurring_issue",
+    "riskScore": 81.9,
+    "severity": "critical",
+    "businessImpact": "65 complaints affected, £8,177 of order value exposed, 62 customers involved. Risk score 81.9/100 driven by statistics (100% of that factor) and volume (100% of that factor).",
+    "summary": "65 of 86 damaged packaging complaints (75.6%) come from courier MetroDash, which handles 27.0% of orders — a 2.8x lift.",
+    "verifiedFacts": [
+      {
+        "statement": "65 of 86 damaged packaging complaints (75.6%) involve courier MetroDash.",
+        "metric": "complaint_share",
+        "value": 75.6
+      },
+      {
+        "statement": "courier MetroDash accounts for 27.0% of all orders.",
+        "metric": "order_share",
+        "value": 27.0
+      },
+      {
+        "statement": "Lift is 2.8x the order baseline (z=10.16, p=0.0).",
+        "metric": "lift",
+        "value": 2.8
+      },
+      {
+        "statement": "Statistical test used 65 complaints against a baseline of 219 orders.",
+        "metric": "sample_size",
+        "value": 65
+      },
+      {
+        "statement": "100.0% of the affected rows involve courier MetroDash versus 27.0% of all orders (3.7x lift).",
+        "metric": "courier_share",
+        "value": 100.0
+      },
+      {
+        "statement": "90.8% of the affected rows involve warehouse WH-North versus 30.0% of all orders (3.0x lift).",
+        "metric": "warehouse_share",
+        "value": 90.8
+      },
+      {
+        "statement": "50.8% of the affected rows involve city Leeds versus 26.4% of all orders (1.9x lift).",
+        "metric": "city_share",
+        "value": 50.8
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A handling or transit problem specific to courier MetroDash may be driving the concentration 75.6% of these complaints versus 27.0% of orders.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by a site or route audit of courier MetroDash and by complaint notes mentioning handling damage. Would be rejected if the same product complains equally through other couriers or hubs."
+      },
+      {
+        "statement": "Part of the pattern may be a labelling or assignment shift rather than a real change in operations.",
+        "confidence": 0.35,
+        "reasoning": "Would be confirmed by comparing category labels and order-to-courier assignment rules with the period before the lift appeared. Would be rejected if labels and routing rules are unchanged."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:2",
+        "fields": {
+          "orderId": "ORD-10009",
+          "productId": "F-P025",
+          "productName": "Sports Bra",
+          "date": "2026-09-24",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:3",
+        "fields": {
+          "orderId": "ORD-10012",
+          "productId": "F-P001",
+          "productName": "Linen Shirt",
+          "date": "2026-09-25",
+          "warehouse": "WH-North",
+          "city": "Birmingham",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:4",
+        "fields": {
+          "orderId": "ORD-10015",
+          "productId": "F-P013",
+          "productName": "Polo Shirt",
+          "date": "2026-10-04",
+          "warehouse": "WH-North",
+          "city": "Manchester",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:5",
+        "fields": {
+          "orderId": "ORD-10020",
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-10-02",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Box was crushed on one side and the packaging tape was torn open."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:6",
+        "fields": {
+          "orderId": "ORD-10028",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-07",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Packaging was smashed in transit and the product box is dented."
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P025",
+        "F-P001",
+        "F-P013",
+        "F-P008",
+        "F-P016",
+        "F-P024",
+        "F-P019",
+        "F-P004",
+        "F-P003",
+        "F-P022",
+        "F-P006",
+        "P-UNKNOWN"
+      ],
+      "locations": [
+        "WH-North",
+        "WH-Central",
+        "WH-South",
+        "Leeds",
+        "Birmingham",
+        "Manchester",
+        "London",
+        "Bristol",
+        "Glasgow"
+      ],
+      "couriers": [
+        "MetroDash"
+      ],
+      "orders": [
+        "ORD-10009",
+        "ORD-10012",
+        "ORD-10015",
+        "ORD-10020",
+        "ORD-10028",
+        "ORD-10045",
+        "ORD-10065",
+        "ORD-10084",
+        "ORD-10099",
+        "ORD-10128",
+        "ORD-10131",
+        "ORD-10136"
+      ]
+    },
+    "recommendation": {
+      "action": "Audit courier MetroDash handling for damaged packaging on the next dispatch cycle and review the 65 complaint orders with the courier owner.",
+      "why": "65 of 86 damaged packaging complaints (75.6%) involve courier MetroDash. courier MetroDash accounts for 27.0% of all orders.",
+      "preventive": "Add a damaged packaging checkpoint to courier MetroDash and track its complaint share weekly.",
+      "priority": "urgent"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-21469907",
+    "title": "Damaged packaging complaints concentrate on warehouse WH-North",
+    "type": "recurring_issue",
+    "riskScore": 81.3,
+    "severity": "critical",
+    "businessImpact": "64 complaints affected, £8,137 of order value exposed, 62 customers involved. Risk score 81.3/100 driven by statistics (100% of that factor) and volume (100% of that factor).",
+    "summary": "64 of 86 damaged packaging complaints (74.4%) come from warehouse WH-North, which handles 30.0% of orders — a 2.48x lift.",
+    "verifiedFacts": [
+      {
+        "statement": "64 of 86 damaged packaging complaints (74.4%) involve warehouse WH-North.",
+        "metric": "complaint_share",
+        "value": 74.4
+      },
+      {
+        "statement": "warehouse WH-North accounts for 30.0% of all orders.",
+        "metric": "order_share",
+        "value": 30.0
+      },
+      {
+        "statement": "Lift is 2.48x the order baseline (z=8.97, p=0.0).",
+        "metric": "lift",
+        "value": 2.48
+      },
+      {
+        "statement": "Statistical test used 64 complaints against a baseline of 244 orders.",
+        "metric": "sample_size",
+        "value": 64
+      },
+      {
+        "statement": "92.2% of the affected rows involve courier MetroDash versus 27.0% of all orders (3.4x lift).",
+        "metric": "courier_share",
+        "value": 92.2
+      },
+      {
+        "statement": "100.0% of the affected rows involve warehouse WH-North versus 30.0% of all orders (3.3x lift).",
+        "metric": "warehouse_share",
+        "value": 100.0
+      },
+      {
+        "statement": "54.7% of the affected rows involve city Leeds versus 26.4% of all orders (2.1x lift).",
+        "metric": "city_share",
+        "value": 54.7
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A handling or transit problem specific to warehouse WH-North may be driving the concentration 74.4% of these complaints versus 30.0% of orders.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by a site or route audit of warehouse WH-North and by complaint notes mentioning handling damage. Would be rejected if the same product complains equally through other couriers or hubs."
+      },
+      {
+        "statement": "Part of the pattern may be a labelling or assignment shift rather than a real change in operations.",
+        "confidence": 0.35,
+        "reasoning": "Would be confirmed by comparing category labels and order-to-courier assignment rules with the period before the lift appeared. Would be rejected if labels and routing rules are unchanged."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:2",
+        "fields": {
+          "orderId": "ORD-10009",
+          "productId": "F-P025",
+          "productName": "Sports Bra",
+          "date": "2026-09-24",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:3",
+        "fields": {
+          "orderId": "ORD-10012",
+          "productId": "F-P001",
+          "productName": "Linen Shirt",
+          "date": "2026-09-25",
+          "warehouse": "WH-North",
+          "city": "Birmingham",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:4",
+        "fields": {
+          "orderId": "ORD-10015",
+          "productId": "F-P013",
+          "productName": "Polo Shirt",
+          "date": "2026-10-04",
+          "warehouse": "WH-North",
+          "city": "Manchester",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:5",
+        "fields": {
+          "orderId": "ORD-10020",
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-10-02",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Box was crushed on one side and the packaging tape was torn open."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:6",
+        "fields": {
+          "orderId": "ORD-10028",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-07",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Packaging was smashed in transit and the product box is dented."
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P025",
+        "F-P001",
+        "F-P013",
+        "F-P008",
+        "F-P016",
+        "F-P024",
+        "F-P019",
+        "F-P004",
+        "F-P003",
+        "F-P022",
+        "F-P006",
+        "P-UNKNOWN"
+      ],
+      "locations": [
+        "WH-North"
+      ],
+      "couriers": [
+        "MetroDash",
+        "ParcelOne"
+      ],
+      "orders": [
+        "ORD-10009",
+        "ORD-10012",
+        "ORD-10015",
+        "ORD-10020",
+        "ORD-10028",
+        "ORD-10045",
+        "ORD-10065",
+        "ORD-10084",
+        "ORD-10099",
+        "ORD-10128",
+        "ORD-10131",
+        "ORD-10136"
+      ]
+    },
+    "recommendation": {
+      "action": "Audit warehouse WH-North handling for damaged packaging on the next dispatch cycle and review the 64 complaint orders with the warehouse owner.",
+      "why": "64 of 86 damaged packaging complaints (74.4%) involve warehouse WH-North. warehouse WH-North accounts for 30.0% of all orders.",
+      "preventive": "Add a damaged packaging checkpoint to warehouse WH-North and track its complaint share weekly.",
+      "priority": "urgent"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-ddefa7ee",
+    "title": "Complaint spike on Tailored Shorts in the last 7 days",
+    "type": "complaint_spike",
+    "riskScore": 77.0,
+    "severity": "high",
+    "businessImpact": "36 complaints affected, £0 of order value exposed, 16 customers involved. Risk score 77.0/100 driven by statistics (100% of that factor) and volume (100% of that factor).",
+    "summary": "36 complaints about Tailored Shorts in the last 7 days versus 0.3 expected from the prior 21-day baseline (72.0x), led by product quality (69.4%).",
+    "verifiedFacts": [
+      {
+        "statement": "36 complaints about Tailored Shorts were recorded in the last 7 days.",
+        "metric": "recent_complaints",
+        "value": 36
+      },
+      {
+        "statement": "The prior 21-day baseline implies 0.3 complaints for a 7-day window.",
+        "metric": "expected_complaints",
+        "value": 0.3
+      },
+      {
+        "statement": "The spike is 72.0x the baseline (z=35.67).",
+        "metric": "spike_ratio",
+        "value": 72.0
+      },
+      {
+        "statement": "69.4% of the recent complaints are product quality.",
+        "metric": "top_category_share",
+        "value": 69.4
+      },
+      {
+        "statement": "100.0% of the affected rows involve product Tailored Shorts versus 2.0% of all orders (50.8x lift).",
+        "metric": "productId_share",
+        "value": 100.0
+      },
+      {
+        "statement": "100.0% of the affected rows fall in 2026-11 versus 36.6% of all orders (2.7x lift).",
+        "metric": "month_share",
+        "value": 100.0
+      },
+      {
+        "statement": "50.0% of the affected rows involve courier MetroDash versus 27.0% of all orders (1.9x lift).",
+        "metric": "courier_share",
+        "value": 50.0
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A recent batch, listing or packaging change for product F-P016 may explain 36 complaints against 0.3 expected.",
+        "confidence": 0.55,
+        "reasoning": "Would be confirmed by batch numbers, listing edits or supplier changes in the spike window. Would be rejected if the same batch complains at the normal rate on other channels."
+      },
+      {
+        "statement": "The spike may partly reflect a recording effect such as a new complaint intake campaign.",
+        "confidence": 0.3,
+        "reasoning": "Would be confirmed by a step change in complaint volume across all products. Would be rejected if other products keep their baseline volume."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:80",
+        "fields": {
+          "orderId": "ORD-10013",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-18",
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "The colour ran in the wash and the fabric shrank."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:81",
+        "fields": {
+          "orderId": "ORD-10028",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-17",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "Defective zipper, the product broke after two uses."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:82",
+        "fields": {
+          "orderId": "ORD-10030",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-16",
+          "warehouse": "WH-Central",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "category": "Other",
+          "complaintText": null
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:83",
+        "fields": {
+          "orderId": "ORD-10070",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-15",
+          "warehouse": "WH-Central",
+          "city": "Birmingham",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Packaging was smashed in transit and the product box is dented."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:84",
+        "fields": {
+          "orderId": "ORD-10088",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-18",
+          "warehouse": "WH-North",
+          "city": "Bristol",
+          "courier": "CityFreight",
+          "category": "Product quality",
+          "complaintText": "Defective zipper, the product broke after two uses."
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P016"
+      ],
+      "locations": [
+        "WH-South",
+        "WH-North",
+        "WH-Central",
+        "Bristol",
+        "Leeds",
+        "Birmingham"
+      ],
+      "couriers": [
+        "MetroDash",
+        "CityFreight",
+        "ParcelOne"
+      ],
+      "orders": [
+        "ORD-10013",
+        "ORD-10028",
+        "ORD-10030",
+        "ORD-10070",
+        "ORD-10088",
+        "ORD-10148",
+        "ORD-10212",
+        "ORD-10235",
+        "ORD-10253",
+        "ORD-10291",
+        "ORD-10346",
+        "ORD-10401"
+      ]
+    },
+    "recommendation": {
+      "action": "Pull the last 36 Tailored Shorts complaints into one review today, starting with product quality, and pause promotions until the cause is scoped.",
+      "why": "36 complaints about Tailored Shorts were recorded in the last 7 days. The prior 21-day baseline implies 0.3 complaints for a 7-day window.",
+      "preventive": "Watch Tailored Shorts complaint volume daily for two weeks and alert the product owner above 0.3 complaints per week.",
+      "priority": "high"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-472bd634",
+    "title": "44 open orders at risk via warehouse WH-South",
+    "type": "delivery_risk",
+    "riskScore": 76.4,
+    "severity": "high",
+    "businessImpact": "44 orders affected, £6,665 of order value exposed, 44 customers involved. Risk score 76.4/100 driven by statistics (73% of that factor) and volume (100% of that factor).",
+    "summary": "44 of 47 open warehouse WH-South orders are likely to miss their promised date; the last 14 days show a 46.6% late share versus 11.8% before.",
+    "verifiedFacts": [
+      {
+        "statement": "44 of 47 open warehouse WH-South orders are at risk of missing their promised date.",
+        "metric": "orders_at_risk",
+        "value": 44
+      },
+      {
+        "statement": "Recent late-delivery share (last 14 days) is 46.6%.",
+        "metric": "recent_late_share",
+        "value": 46.6
+      },
+      {
+        "statement": "Baseline late-delivery share is 11.8%.",
+        "metric": "baseline_late_share",
+        "value": 11.8
+      },
+      {
+        "statement": "Average miss probability for the flagged orders is 65.2%.",
+        "metric": "average_miss_probability",
+        "value": 65.2
+      },
+      {
+        "statement": "93.6% of this group's open orders are flagged.",
+        "metric": "open_orders_at_risk_share",
+        "value": 93.6
+      },
+      {
+        "statement": "100.0% of the affected rows involve warehouse WH-South versus 33.7% of all orders (3.0x lift).",
+        "metric": "warehouse_share",
+        "value": 100.0
+      },
+      {
+        "statement": "100.0% of the affected rows fall in 2026-11 versus 36.6% of all orders (2.7x lift).",
+        "metric": "month_share",
+        "value": 100.0
+      },
+      {
+        "statement": "75.0% of the affected rows involve city Bristol versus 27.6% of all orders (2.7x lift).",
+        "metric": "city_share",
+        "value": 75.0
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "Capacity or route congestion at warehouse WH-South may push the 44 flagged orders past their promise, with late share at 46.6% versus 11.8% before.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by carrier capacity reports, hub scan delays or weather disruptions in the current window. Would be rejected if scan data shows normal transit times and misses are isolated."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:47",
+        "fields": {
+          "orderId": "ORD-10046",
+          "productId": "F-P007",
+          "productName": "Pleated Skirt",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-19",
+          "shippedDate": "2026-11-16",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "in_transit",
+          "quantity": 4,
+          "amount": 237.78
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:48",
+        "fields": {
+          "orderId": "ORD-10047",
+          "productId": "F-P003",
+          "productName": "Oversized Hoodie",
+          "date": "2026-11-18",
+          "promisedDate": "2026-11-21",
+          "shippedDate": "2026-11-19",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "in_transit",
+          "quantity": 1,
+          "amount": 115.57
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:68",
+        "fields": {
+          "orderId": "ORD-10067",
+          "productId": "F-P015",
+          "productName": "Maxi Dress",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-18",
+          "shippedDate": "2026-11-17",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "shipped",
+          "quantity": 2,
+          "amount": 64.6
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:91",
+        "fields": {
+          "orderId": "ORD-10090",
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-19",
+          "shippedDate": "2026-11-16",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "status": "shipped",
+          "quantity": 2,
+          "amount": 162.29
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:98",
+        "fields": {
+          "orderId": "ORD-10097",
+          "productId": "F-P003",
+          "productName": "Oversized Hoodie",
+          "date": "2026-11-16",
+          "promisedDate": "2026-11-20",
+          "shippedDate": "2026-11-17",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "CityFreight",
+          "status": "shipped",
+          "quantity": 1,
+          "amount": 114.89
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P007",
+        "F-P003",
+        "F-P015",
+        "F-P008",
+        "F-P001",
+        "F-P013",
+        "F-P025",
+        "F-P009",
+        "F-P012",
+        "F-P006",
+        "F-P002",
+        "F-P023"
+      ],
+      "locations": [
+        "WH-South"
+      ],
+      "couriers": [
+        "SwiftShip",
+        "MetroDash",
+        "CityFreight",
+        "ParcelOne"
+      ],
+      "orders": [
+        "ORD-10046",
+        "ORD-10047",
+        "ORD-10067",
+        "ORD-10090",
+        "ORD-10097",
+        "ORD-10158",
+        "ORD-10199",
+        "ORD-10206",
+        "ORD-10211",
+        "ORD-10217",
+        "ORD-10219",
+        "ORD-10232",
+        "ORD-10286",
+        "ORD-10305",
+        "ORD-10344",
+        "ORD-10359",
+        "ORD-10398",
+        "ORD-10453",
+        "ORD-10474",
+        "ORD-10475"
+      ]
+    },
+    "recommendation": {
+      "action": "Call the warehouse WH-South account today about the 44 flagged orders, re-confirm promised dates with customers and pre-emptively upgrade the most valuable ones.",
+      "why": "44 of 47 open warehouse WH-South orders are at risk of missing their promised date. Recent late-delivery share (last 14 days) is 46.6%.",
+      "preventive": "Set a daily promise-risk check for warehouse WH-South and route new orders to a backup carrier while the late share stays above 30%.",
+      "priority": "high"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-743d4448",
+    "title": "35 open orders at risk via city Bristol",
+    "type": "delivery_risk",
+    "riskScore": 73.5,
+    "severity": "high",
+    "businessImpact": "35 orders affected, £5,293 of order value exposed, 34 customers involved. Risk score 73.5/100 driven by statistics (74% of that factor) and volume (100% of that factor).",
+    "summary": "35 of 42 open city Bristol orders are likely to miss their promised date; the last 14 days show a 47.9% late share versus 14.2% before.",
+    "verifiedFacts": [
+      {
+        "statement": "35 of 42 open city Bristol orders are at risk of missing their promised date.",
+        "metric": "orders_at_risk",
+        "value": 35
+      },
+      {
+        "statement": "Recent late-delivery share (last 14 days) is 47.9%.",
+        "metric": "recent_late_share",
+        "value": 47.9
+      },
+      {
+        "statement": "Baseline late-delivery share is 14.2%.",
+        "metric": "baseline_late_share",
+        "value": 14.2
+      },
+      {
+        "statement": "Average miss probability for the flagged orders is 64.7%.",
+        "metric": "average_miss_probability",
+        "value": 64.7
+      },
+      {
+        "statement": "83.3% of this group's open orders are flagged.",
+        "metric": "open_orders_at_risk_share",
+        "value": 83.3
+      },
+      {
+        "statement": "100.0% of the affected rows involve city Bristol versus 27.6% of all orders (3.6x lift).",
+        "metric": "city_share",
+        "value": 100.0
+      },
+      {
+        "statement": "94.3% of the affected rows involve warehouse WH-South versus 33.7% of all orders (2.8x lift).",
+        "metric": "warehouse_share",
+        "value": 94.3
+      },
+      {
+        "statement": "100.0% of the affected rows fall in 2026-11 versus 36.6% of all orders (2.7x lift).",
+        "metric": "month_share",
+        "value": 100.0
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "Capacity or route congestion at city Bristol may push the 35 flagged orders past their promise, with late share at 47.9% versus 14.2% before.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by carrier capacity reports, hub scan delays or weather disruptions in the current window. Would be rejected if scan data shows normal transit times and misses are isolated."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:47",
+        "fields": {
+          "orderId": "ORD-10046",
+          "productId": "F-P007",
+          "productName": "Pleated Skirt",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-19",
+          "shippedDate": "2026-11-16",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "in_transit",
+          "quantity": 4,
+          "amount": 237.78
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:48",
+        "fields": {
+          "orderId": "ORD-10047",
+          "productId": "F-P003",
+          "productName": "Oversized Hoodie",
+          "date": "2026-11-18",
+          "promisedDate": "2026-11-21",
+          "shippedDate": "2026-11-19",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "in_transit",
+          "quantity": 1,
+          "amount": 115.57
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:68",
+        "fields": {
+          "orderId": "ORD-10067",
+          "productId": "F-P015",
+          "productName": "Maxi Dress",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-18",
+          "shippedDate": "2026-11-17",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "shipped",
+          "quantity": 2,
+          "amount": 64.6
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:91",
+        "fields": {
+          "orderId": "ORD-10090",
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-19",
+          "shippedDate": "2026-11-16",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "status": "shipped",
+          "quantity": 2,
+          "amount": 162.29
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:98",
+        "fields": {
+          "orderId": "ORD-10097",
+          "productId": "F-P003",
+          "productName": "Oversized Hoodie",
+          "date": "2026-11-16",
+          "promisedDate": "2026-11-20",
+          "shippedDate": "2026-11-17",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "CityFreight",
+          "status": "shipped",
+          "quantity": 1,
+          "amount": 114.89
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P007",
+        "F-P003",
+        "F-P015",
+        "F-P008",
+        "F-P001",
+        "F-P025",
+        "F-P009",
+        "F-P012",
+        "F-P006",
+        "F-P002",
+        "F-P023",
+        "F-P004"
+      ],
+      "locations": [
+        "Bristol"
+      ],
+      "couriers": [
+        "SwiftShip",
+        "MetroDash",
+        "CityFreight",
+        "ParcelOne"
+      ],
+      "orders": [
+        "ORD-10046",
+        "ORD-10047",
+        "ORD-10067",
+        "ORD-10090",
+        "ORD-10097",
+        "ORD-10158",
+        "ORD-10206",
+        "ORD-10211",
+        "ORD-10217",
+        "ORD-10219",
+        "ORD-10232",
+        "ORD-10286",
+        "ORD-10305",
+        "ORD-10344",
+        "ORD-10398",
+        "ORD-10453",
+        "ORD-10474",
+        "ORD-10475",
+        "ORD-10505",
+        "ORD-10523"
+      ]
+    },
+    "recommendation": {
+      "action": "Call the city Bristol account today about the 35 flagged orders, re-confirm promised dates with customers and pre-emptively upgrade the most valuable ones.",
+      "why": "35 of 42 open city Bristol orders are at risk of missing their promised date. Recent late-delivery share (last 14 days) is 47.9%.",
+      "preventive": "Set a daily promise-risk check for city Bristol and route new orders to a backup carrier while the late share stays above 30%.",
+      "priority": "high"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-a601c09c",
+    "title": "Damaged packaging complaints concentrate on city Leeds",
+    "type": "recurring_issue",
+    "riskScore": 66.3,
+    "severity": "high",
+    "businessImpact": "39 complaints affected, £4,508 of order value exposed, 37 customers involved. Risk score 66.3/100 driven by statistics (67% of that factor) and volume (100% of that factor).",
+    "summary": "39 of 86 damaged packaging complaints (45.3%) come from city Leeds, which handles 26.4% of orders — a 1.72x lift.",
+    "verifiedFacts": [
+      {
+        "statement": "39 of 86 damaged packaging complaints (45.3%) involve city Leeds.",
+        "metric": "complaint_share",
+        "value": 45.3
+      },
+      {
+        "statement": "city Leeds accounts for 26.4% of all orders.",
+        "metric": "order_share",
+        "value": 26.4
+      },
+      {
+        "statement": "Lift is 1.72x the order baseline (z=4.0, p=0.0).",
+        "metric": "lift",
+        "value": 1.72
+      },
+      {
+        "statement": "Statistical test used 39 complaints against a baseline of 214 orders.",
+        "metric": "sample_size",
+        "value": 39
+      },
+      {
+        "statement": "100.0% of the affected rows involve city Leeds versus 26.4% of all orders (3.8x lift).",
+        "metric": "city_share",
+        "value": 100.0
+      },
+      {
+        "statement": "84.6% of the affected rows involve courier MetroDash versus 27.0% of all orders (3.1x lift).",
+        "metric": "courier_share",
+        "value": 84.6
+      },
+      {
+        "statement": "89.7% of the affected rows involve warehouse WH-North versus 30.0% of all orders (3.0x lift).",
+        "metric": "warehouse_share",
+        "value": 89.7
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A handling or transit problem specific to city Leeds may be driving the concentration 45.3% of these complaints versus 26.4% of orders.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by a site or route audit of city Leeds and by complaint notes mentioning handling damage. Would be rejected if the same product complains equally through other couriers or hubs."
+      },
+      {
+        "statement": "Part of the pattern may be a labelling or assignment shift rather than a real change in operations.",
+        "confidence": 0.35,
+        "reasoning": "Would be confirmed by comparing category labels and order-to-courier assignment rules with the period before the lift appeared. Would be rejected if labels and routing rules are unchanged."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:2",
+        "fields": {
+          "orderId": "ORD-10009",
+          "productId": "F-P025",
+          "productName": "Sports Bra",
+          "date": "2026-09-24",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:5",
+        "fields": {
+          "orderId": "ORD-10020",
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-10-02",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Box was crushed on one side and the packaging tape was torn open."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:6",
+        "fields": {
+          "orderId": "ORD-10028",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-07",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Packaging was smashed in transit and the product box is dented."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:7",
+        "fields": {
+          "orderId": "ORD-10045",
+          "productId": "F-P024",
+          "productName": "Lounge Set",
+          "date": "2026-10-04",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Item arrived with damaged packaging, the seal was already broken."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:8",
+        "fields": {
+          "orderId": "ORD-10065",
+          "productId": "F-P025",
+          "productName": "Sports Bra",
+          "date": "2026-11-11",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The parcel arrived damaged and the packaging had leaked inside."
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P025",
+        "F-P008",
+        "F-P016",
+        "F-P024",
+        "F-P004",
+        "F-P003",
+        "F-P022",
+        "F-P006",
+        "P-UNKNOWN",
+        "F-P007",
+        "F-P010",
+        "F-P014"
+      ],
+      "locations": [
+        "Leeds"
+      ],
+      "couriers": [
+        "MetroDash",
+        "ParcelOne",
+        "SwiftShip",
+        "CityFreight"
+      ],
+      "orders": [
+        "ORD-10009",
+        "ORD-10020",
+        "ORD-10028",
+        "ORD-10045",
+        "ORD-10065",
+        "ORD-10084",
+        "ORD-10131",
+        "ORD-10139",
+        "ORD-10166",
+        "ORD-10178",
+        "ORD-10186",
+        "ORD-10192"
+      ]
+    },
+    "recommendation": {
+      "action": "Audit city Leeds handling for damaged packaging on the next dispatch cycle and review the 39 complaint orders with the city owner.",
+      "why": "39 of 86 damaged packaging complaints (45.3%) involve city Leeds. city Leeds accounts for 26.4% of all orders.",
+      "preventive": "Add a damaged packaging checkpoint to city Leeds and track its complaint share weekly.",
+      "priority": "high"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-e5ff6ac7",
+    "title": "Product quality complaints concentrate on product Tailored Shorts",
+    "type": "recurring_issue",
+    "riskScore": 65.1,
+    "severity": "high",
+    "businessImpact": "25 complaints affected, £1,917 of order value exposed, 12 customers involved. Risk score 65.1/100 driven by statistics (100% of that factor) and volume (83% of that factor).",
+    "summary": "25 of 32 product quality complaints (78.1%) come from product Tailored Shorts, which handles 2.0% of orders — a 39.65x lift.",
+    "verifiedFacts": [
+      {
+        "statement": "25 of 32 product quality complaints (78.1%) involve product Tailored Shorts.",
+        "metric": "complaint_share",
+        "value": 78.1
+      },
+      {
+        "statement": "product Tailored Shorts accounts for 2.0% of all orders.",
+        "metric": "order_share",
+        "value": 2.0
+      },
+      {
+        "statement": "Lift is 39.65x the order baseline (z=31.0, p=0.0).",
+        "metric": "lift",
+        "value": 39.65
+      },
+      {
+        "statement": "Statistical test used 25 complaints against a baseline of 16 orders.",
+        "metric": "sample_size",
+        "value": 25
+      },
+      {
+        "statement": "100.0% of the affected rows involve product Tailored Shorts versus 2.0% of all orders (50.8x lift).",
+        "metric": "productId_share",
+        "value": 100.0
+      },
+      {
+        "statement": "100.0% of the affected rows fall in 2026-11 versus 36.6% of all orders (2.7x lift).",
+        "metric": "month_share",
+        "value": 100.0
+      },
+      {
+        "statement": "52.0% of the affected rows involve courier MetroDash versus 27.0% of all orders (1.9x lift).",
+        "metric": "courier_share",
+        "value": 52.0
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A handling or transit problem specific to product F-P016 may be driving the concentration 78.1% of these complaints versus 2.0% of orders.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by a site or route audit of product F-P016 and by complaint notes mentioning handling damage. Would be rejected if the same product complains equally through other couriers or hubs."
+      },
+      {
+        "statement": "Part of the pattern may be a labelling or assignment shift rather than a real change in operations.",
+        "confidence": 0.35,
+        "reasoning": "Would be confirmed by comparing category labels and order-to-courier assignment rules with the period before the lift appeared. Would be rejected if labels and routing rules are unchanged."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:80",
+        "fields": {
+          "orderId": "ORD-10013",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-18",
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "The colour ran in the wash and the fabric shrank."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:81",
+        "fields": {
+          "orderId": "ORD-10028",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-17",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "Defective zipper, the product broke after two uses."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:84",
+        "fields": {
+          "orderId": "ORD-10088",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-18",
+          "warehouse": "WH-North",
+          "city": "Bristol",
+          "courier": "CityFreight",
+          "category": "Product quality",
+          "complaintText": "Defective zipper, the product broke after two uses."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:85",
+        "fields": {
+          "orderId": "ORD-10148",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-17",
+          "warehouse": "WH-South",
+          "city": "Birmingham",
+          "courier": "ParcelOne",
+          "category": "Product quality",
+          "complaintText": "The product quality is poor, the fabric faded after one wash."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:86",
+        "fields": {
+          "orderId": "ORD-10212",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-16",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "CityFreight",
+          "category": "Product quality",
+          "complaintText": "Defective zipper, the product broke after two uses."
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P016"
+      ],
+      "locations": [
+        "WH-South",
+        "WH-North",
+        "WH-Central",
+        "Bristol",
+        "Leeds",
+        "Birmingham"
+      ],
+      "couriers": [
+        "MetroDash",
+        "CityFreight",
+        "ParcelOne"
+      ],
+      "orders": [
+        "ORD-10013",
+        "ORD-10028",
+        "ORD-10088",
+        "ORD-10148",
+        "ORD-10212",
+        "ORD-10253",
+        "ORD-10291",
+        "ORD-10346",
+        "ORD-10568",
+        "ORD-10669",
+        "ORD-10694",
+        "ORD-10030"
+      ]
+    },
+    "recommendation": {
+      "action": "Audit product Tailored Shorts handling for product quality on the next dispatch cycle and review the 25 complaint orders with the product owner.",
+      "why": "25 of 32 product quality complaints (78.1%) involve product Tailored Shorts. product Tailored Shorts accounts for 2.0% of all orders.",
+      "preventive": "Add a product quality checkpoint to product Tailored Shorts and track its complaint share weekly.",
+      "priority": "high"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-2c7da68a",
+    "title": "Denim Jacket is out of stock",
+    "type": "inventory_risk",
+    "riskScore": 64.4,
+    "severity": "high",
+    "businessImpact": "1 products affected, £11,007 of order value exposed, 0 customers involved. Risk score 64.4/100 driven by statistics (100% of that factor) and value (92% of that factor).",
+    "summary": "Denim Jacket holds -12 units against a 14.6/day sales rate, leaving 0.0 days of cover and sitting below the 91-unit reorder level.",
+    "verifiedFacts": [
+      {
+        "statement": "Denim Jacket has -12 units on hand.",
+        "metric": "stock_on_hand",
+        "value": -12
+      },
+      {
+        "statement": "Recent daily sales run at 14.6 units per day.",
+        "metric": "daily_sales_rate",
+        "value": 14.6
+      },
+      {
+        "statement": "Days of cover is 0.0 days.",
+        "metric": "days_of_cover",
+        "value": 0.0
+      },
+      {
+        "statement": "Projected stock-out date is 2026-11-19.",
+        "metric": "projected_stockout",
+        "value": "2026-11-19"
+      },
+      {
+        "statement": "The reorder level is 91 units.",
+        "metric": "reorder_level",
+        "value": 91
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "Replenishment timing for product F-P004 may be too slow for a 14.6/day run rate, leaving 0.0 days of cover.",
+        "confidence": 0.65,
+        "reasoning": "Would be confirmed by open purchase orders with arrival dates after the projected stock-out. Would be rejected if an inbound shipment is already confirmed to land before that date."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "inventory.csv",
+        "rowId": "inventory.csv:5",
+        "fields": {
+          "productId": "F-P004",
+          "productName": "Denim Jacket",
+          "warehouse": "WH-North",
+          "category": "Dresses",
+          "stock": -12,
+          "dailySalesRate": 14.6,
+          "reorderLevel": 91
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:5",
+        "fields": {
+          "productId": "F-P004",
+          "productName": "Denim Jacket",
+          "date": "2026-09-23",
+          "quantity": 14,
+          "amount": 1349.32
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:30",
+        "fields": {
+          "productId": "F-P004",
+          "productName": "Denim Jacket",
+          "date": "2026-09-24",
+          "quantity": 18,
+          "amount": 1734.84
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:55",
+        "fields": {
+          "productId": "F-P004",
+          "productName": "Denim Jacket",
+          "date": "2026-09-25",
+          "quantity": 16,
+          "amount": 1542.08
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:80",
+        "fields": {
+          "productId": "F-P004",
+          "productName": "Denim Jacket",
+          "date": "2026-09-26",
+          "quantity": 14,
+          "amount": 1349.32
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P004"
+      ],
+      "locations": [],
+      "couriers": [],
+      "orders": []
+    },
+    "recommendation": {
+      "action": "Approve an emergency replenishment of 114 units for Denim Jacket today, or cap new orders to cover the 0.0 days of stock on hand.",
+      "why": "Denim Jacket has -12 units on hand. Recent daily sales run at 14.6 units per day.",
+      "preventive": "Raise the reorder level for Denim Jacket above 146 units and review its velocity weekly.",
+      "priority": "high"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-efc94c9c",
+    "title": "20 open orders at risk via courier SwiftShip",
+    "type": "delivery_risk",
+    "riskScore": 57.2,
+    "severity": "medium",
+    "businessImpact": "20 orders affected, £2,975 of order value exposed, 20 customers involved. Risk score 57.2/100 driven by statistics (68% of that factor) and volume (67% of that factor).",
+    "summary": "20 of 32 open courier SwiftShip orders are likely to miss their promised date; the last 14 days show a 35.7% late share versus 16.0% before.",
+    "verifiedFacts": [
+      {
+        "statement": "20 of 32 open courier SwiftShip orders are at risk of missing their promised date.",
+        "metric": "orders_at_risk",
+        "value": 20
+      },
+      {
+        "statement": "Recent late-delivery share (last 14 days) is 35.7%.",
+        "metric": "recent_late_share",
+        "value": 35.7
+      },
+      {
+        "statement": "Baseline late-delivery share is 16.0%.",
+        "metric": "baseline_late_share",
+        "value": 16.0
+      },
+      {
+        "statement": "Average miss probability for the flagged orders is 67.9%.",
+        "metric": "average_miss_probability",
+        "value": 67.9
+      },
+      {
+        "statement": "62.5% of this group's open orders are flagged.",
+        "metric": "open_orders_at_risk_share",
+        "value": 62.5
+      },
+      {
+        "statement": "100.0% of the affected rows involve courier SwiftShip versus 22.2% of all orders (4.5x lift).",
+        "metric": "courier_share",
+        "value": 100.0
+      },
+      {
+        "statement": "100.0% of the affected rows fall in 2026-11 versus 36.6% of all orders (2.7x lift).",
+        "metric": "month_share",
+        "value": 100.0
+      },
+      {
+        "statement": "60.0% of the affected rows involve city Bristol versus 27.6% of all orders (2.2x lift).",
+        "metric": "city_share",
+        "value": 60.0
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "Capacity or route congestion at courier SwiftShip may push the 20 flagged orders past their promise, with late share at 35.7% versus 16.0% before.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by carrier capacity reports, hub scan delays or weather disruptions in the current window. Would be rejected if scan data shows normal transit times and misses are isolated."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:38",
+        "fields": {
+          "orderId": "ORD-10037",
+          "productId": "F-P015",
+          "productName": "Maxi Dress",
+          "date": "2026-11-13",
+          "promisedDate": "2026-11-17",
+          "shippedDate": null,
+          "deliveredDate": null,
+          "warehouse": "WH-Central",
+          "city": "Birmingham",
+          "courier": "SwiftShip",
+          "status": "pending",
+          "quantity": 3,
+          "amount": 97.27
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:47",
+        "fields": {
+          "orderId": "ORD-10046",
+          "productId": "F-P007",
+          "productName": "Pleated Skirt",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-19",
+          "shippedDate": "2026-11-16",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "in_transit",
+          "quantity": 4,
+          "amount": 237.78
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:48",
+        "fields": {
+          "orderId": "ORD-10047",
+          "productId": "F-P003",
+          "productName": "Oversized Hoodie",
+          "date": "2026-11-18",
+          "promisedDate": "2026-11-21",
+          "shippedDate": "2026-11-19",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "in_transit",
+          "quantity": 1,
+          "amount": 115.57
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:68",
+        "fields": {
+          "orderId": "ORD-10067",
+          "productId": "F-P015",
+          "productName": "Maxi Dress",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-18",
+          "shippedDate": "2026-11-17",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "SwiftShip",
+          "status": "shipped",
+          "quantity": 2,
+          "amount": 64.6
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:134",
+        "fields": {
+          "orderId": "ORD-10133",
+          "productId": "F-P019",
+          "productName": "Wool Scarf",
+          "date": "2026-11-13",
+          "promisedDate": "2026-11-18",
+          "shippedDate": "2026-11-14",
+          "deliveredDate": null,
+          "warehouse": "WH-Central",
+          "city": "Birmingham",
+          "courier": "SwiftShip",
+          "status": "in_transit",
+          "quantity": 3,
+          "amount": 119.93
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P015",
+        "F-P007",
+        "F-P003",
+        "F-P019",
+        "F-P013",
+        "F-P009",
+        "F-P024",
+        "F-P023",
+        "F-P002",
+        "F-P008",
+        "F-P010",
+        "F-P018"
+      ],
+      "locations": [
+        "Birmingham",
+        "Bristol",
+        "Glasgow",
+        "Leeds"
+      ],
+      "couriers": [
+        "SwiftShip"
+      ],
+      "orders": [
+        "ORD-10037",
+        "ORD-10046",
+        "ORD-10047",
+        "ORD-10067",
+        "ORD-10133",
+        "ORD-10199",
+        "ORD-10217",
+        "ORD-10219",
+        "ORD-10365",
+        "ORD-10422",
+        "ORD-10453",
+        "ORD-10549",
+        "ORD-10633",
+        "ORD-10693",
+        "ORD-10712",
+        "ORD-10742",
+        "ORD-10780",
+        "ORD-10802",
+        "ORD-10803",
+        "ORD-10811"
+      ]
+    },
+    "recommendation": {
+      "action": "Call the courier SwiftShip account today about the 20 flagged orders, re-confirm promised dates with customers and pre-emptively upgrade the most valuable ones.",
+      "why": "20 of 32 open courier SwiftShip orders are at risk of missing their promised date. Recent late-delivery share (last 14 days) is 35.7%.",
+      "preventive": "Set a daily promise-risk check for courier SwiftShip and route new orders to a backup carrier while the late share stays above 30%.",
+      "priority": "normal"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-4402d9ab",
+    "title": "Cargo Pants is out of stock",
+    "type": "inventory_risk",
+    "riskScore": 55.1,
+    "severity": "medium",
+    "businessImpact": "1 products affected, £3,586 of order value exposed, 0 customers involved. Risk score 55.1/100 driven by statistics (100% of that factor) and recency (100% of that factor).",
+    "summary": "Cargo Pants holds -4 units against a 4.8/day sales rate, leaving 0.0 days of cover and sitting below the 31-unit reorder level.",
+    "verifiedFacts": [
+      {
+        "statement": "Cargo Pants has -4 units on hand.",
+        "metric": "stock_on_hand",
+        "value": -4
+      },
+      {
+        "statement": "Recent daily sales run at 4.8 units per day.",
+        "metric": "daily_sales_rate",
+        "value": 4.8
+      },
+      {
+        "statement": "Days of cover is 0.0 days.",
+        "metric": "days_of_cover",
+        "value": 0.0
+      },
+      {
+        "statement": "Projected stock-out date is 2026-11-19.",
+        "metric": "projected_stockout",
+        "value": "2026-11-19"
+      },
+      {
+        "statement": "The reorder level is 31 units.",
+        "metric": "reorder_level",
+        "value": 31
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "Replenishment timing for product F-P010 may be too slow for a 4.8/day run rate, leaving 0.0 days of cover.",
+        "confidence": 0.65,
+        "reasoning": "Would be confirmed by open purchase orders with arrival dates after the projected stock-out. Would be rejected if an inbound shipment is already confirmed to land before that date."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "inventory.csv",
+        "rowId": "inventory.csv:11",
+        "fields": {
+          "productId": "F-P010",
+          "productName": "Cargo Pants",
+          "warehouse": "WH-North",
+          "category": "Bottoms",
+          "stock": -4,
+          "dailySalesRate": 4.8,
+          "reorderLevel": 31
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:11",
+        "fields": {
+          "productId": "F-P010",
+          "productName": "Cargo Pants",
+          "date": "2026-09-23",
+          "quantity": 5,
+          "amount": 476.9
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:36",
+        "fields": {
+          "productId": "F-P010",
+          "productName": "Cargo Pants",
+          "date": "2026-09-24",
+          "quantity": 4,
+          "amount": 381.52
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:61",
+        "fields": {
+          "productId": "F-P010",
+          "productName": "Cargo Pants",
+          "date": "2026-09-25",
+          "quantity": 5,
+          "amount": 476.9
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:86",
+        "fields": {
+          "productId": "F-P010",
+          "productName": "Cargo Pants",
+          "date": "2026-09-26",
+          "quantity": 5,
+          "amount": 476.9
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P010"
+      ],
+      "locations": [],
+      "couriers": [],
+      "orders": []
+    },
+    "recommendation": {
+      "action": "Approve an emergency replenishment of 37 units for Cargo Pants today, or cap new orders to cover the 0.0 days of stock on hand.",
+      "why": "Cargo Pants has -4 units on hand. Recent daily sales run at 4.8 units per day.",
+      "preventive": "Raise the reorder level for Cargo Pants above 48 units and review its velocity weekly.",
+      "priority": "normal"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-d0c40ec1",
+    "title": "17 open orders at risk via courier MetroDash",
+    "type": "delivery_risk",
+    "riskScore": 52.6,
+    "severity": "medium",
+    "businessImpact": "17 orders affected, £3,250 of order value exposed, 17 customers involved. Risk score 52.6/100 driven by statistics (67% of that factor) and volume (57% of that factor).",
+    "summary": "17 of 26 open courier MetroDash orders are likely to miss their promised date; the last 14 days show a 34.1% late share versus 26.3% before.",
+    "verifiedFacts": [
+      {
+        "statement": "17 of 26 open courier MetroDash orders are at risk of missing their promised date.",
+        "metric": "orders_at_risk",
+        "value": 17
+      },
+      {
+        "statement": "Recent late-delivery share (last 14 days) is 34.1%.",
+        "metric": "recent_late_share",
+        "value": 34.1
+      },
+      {
+        "statement": "Baseline late-delivery share is 26.3%.",
+        "metric": "baseline_late_share",
+        "value": 26.3
+      },
+      {
+        "statement": "Average miss probability for the flagged orders is 72.7%.",
+        "metric": "average_miss_probability",
+        "value": 72.7
+      },
+      {
+        "statement": "65.4% of this group's open orders are flagged.",
+        "metric": "open_orders_at_risk_share",
+        "value": 65.4
+      },
+      {
+        "statement": "100.0% of the affected rows involve courier MetroDash versus 27.0% of all orders (3.7x lift).",
+        "metric": "courier_share",
+        "value": 100.0
+      },
+      {
+        "statement": "100.0% of the affected rows fall in 2026-11 versus 36.6% of all orders (2.7x lift).",
+        "metric": "month_share",
+        "value": 100.0
+      },
+      {
+        "statement": "76.5% of the affected rows involve warehouse WH-South versus 33.7% of all orders (2.3x lift).",
+        "metric": "warehouse_share",
+        "value": 76.5
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "Capacity or route congestion at courier MetroDash may push the 17 flagged orders past their promise, with late share at 34.1% versus 26.3% before.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by carrier capacity reports, hub scan delays or weather disruptions in the current window. Would be rejected if scan data shows normal transit times and misses are isolated."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:91",
+        "fields": {
+          "orderId": "ORD-10090",
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-19",
+          "shippedDate": "2026-11-16",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "status": "shipped",
+          "quantity": 2,
+          "amount": 162.29
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:233",
+        "fields": {
+          "orderId": "ORD-10232",
+          "productId": "F-P015",
+          "productName": "Maxi Dress",
+          "date": "2026-11-10",
+          "promisedDate": "2026-11-15",
+          "shippedDate": "2026-11-11",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "status": "in_transit",
+          "quantity": 2,
+          "amount": 64.73
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:306",
+        "fields": {
+          "orderId": "ORD-10305",
+          "productId": "F-P012",
+          "productName": "Ribbed Cardigan",
+          "date": "2026-11-16",
+          "promisedDate": "2026-11-20",
+          "shippedDate": "2026-11-17",
+          "deliveredDate": null,
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "status": "shipped",
+          "quantity": 3,
+          "amount": 317.1
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:369",
+        "fields": {
+          "orderId": "ORD-10368",
+          "productId": "F-P024",
+          "productName": "Lounge Set",
+          "date": "2026-11-15",
+          "promisedDate": "2026-11-18",
+          "shippedDate": null,
+          "deliveredDate": null,
+          "warehouse": "WH-Central",
+          "city": "Manchester",
+          "courier": "MetroDash",
+          "status": "pending",
+          "quantity": 3,
+          "amount": 342.59
+        }
+      },
+      {
+        "source": "orders.csv",
+        "rowId": "orders.csv:437",
+        "fields": {
+          "orderId": "ORD-10436",
+          "productId": "F-P002",
+          "productName": "Cotton Tee",
+          "date": "2026-11-13",
+          "promisedDate": "2026-11-16",
+          "shippedDate": "2026-11-14",
+          "deliveredDate": null,
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "status": "shipped",
+          "quantity": 2,
+          "amount": 201.72
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P008",
+        "F-P015",
+        "F-P012",
+        "F-P024",
+        "F-P002",
+        "F-P018",
+        "F-P019",
+        "F-P013",
+        "F-P023",
+        "F-P006",
+        "F-P017",
+        "F-P011"
+      ],
+      "locations": [
+        "Bristol",
+        "Manchester",
+        "Leeds",
+        "London",
+        "Birmingham"
+      ],
+      "couriers": [
+        "MetroDash"
+      ],
+      "orders": [
+        "ORD-10090",
+        "ORD-10232",
+        "ORD-10305",
+        "ORD-10368",
+        "ORD-10436",
+        "ORD-10449",
+        "ORD-10475",
+        "ORD-10536",
+        "ORD-10540",
+        "ORD-10662",
+        "ORD-10687",
+        "ORD-10711",
+        "ORD-10801",
+        "ORD-10805",
+        "ORD-10806",
+        "ORD-10808",
+        "ORD-10812"
+      ]
+    },
+    "recommendation": {
+      "action": "Call the courier MetroDash account today about the 17 flagged orders, re-confirm promised dates with customers and pre-emptively upgrade the most valuable ones.",
+      "why": "17 of 26 open courier MetroDash orders are at risk of missing their promised date. Recent late-delivery share (last 14 days) is 34.1%.",
+      "preventive": "Set a daily promise-risk check for courier MetroDash and route new orders to a backup carrier while the late share stays above 30%.",
+      "priority": "normal"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-60de2bef",
+    "title": "Damaged packaging complaints concentrate on product Tailored Shorts",
+    "type": "recurring_issue",
+    "riskScore": 51.7,
+    "severity": "medium",
+    "businessImpact": "10 complaints affected, £1,037 of order value exposed, 5 customers involved. Risk score 51.7/100 driven by statistics (100% of that factor) and recency (81% of that factor).",
+    "summary": "10 of 86 damaged packaging complaints (11.6%) come from product Tailored Shorts, which handles 2.0% of orders — a 5.9x lift.",
+    "verifiedFacts": [
+      {
+        "statement": "10 of 86 damaged packaging complaints (11.6%) involve product Tailored Shorts.",
+        "metric": "complaint_share",
+        "value": 11.6
+      },
+      {
+        "statement": "product Tailored Shorts accounts for 2.0% of all orders.",
+        "metric": "order_share",
+        "value": 2.0
+      },
+      {
+        "statement": "Lift is 5.9x the order baseline (z=6.44, p=0.0).",
+        "metric": "lift",
+        "value": 5.9
+      },
+      {
+        "statement": "Statistical test used 10 complaints against a baseline of 16 orders.",
+        "metric": "sample_size",
+        "value": 10
+      },
+      {
+        "statement": "100.0% of the affected rows involve product Tailored Shorts versus 2.0% of all orders (50.8x lift).",
+        "metric": "productId_share",
+        "value": 100.0
+      },
+      {
+        "statement": "70.0% of the affected rows involve city Birmingham versus 25.0% of all orders (2.8x lift).",
+        "metric": "city_share",
+        "value": 70.0
+      },
+      {
+        "statement": "100.0% of the affected rows fall in 2026-11 versus 36.6% of all orders (2.7x lift).",
+        "metric": "month_share",
+        "value": 100.0
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A handling or transit problem specific to product F-P016 may be driving the concentration 11.6% of these complaints versus 2.0% of orders.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by a site or route audit of product F-P016 and by complaint notes mentioning handling damage. Would be rejected if the same product complains equally through other couriers or hubs."
+      },
+      {
+        "statement": "Part of the pattern may be a labelling or assignment shift rather than a real change in operations.",
+        "confidence": 0.35,
+        "reasoning": "Would be confirmed by comparing category labels and order-to-courier assignment rules with the period before the lift appeared. Would be rejected if labels and routing rules are unchanged."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:6",
+        "fields": {
+          "orderId": "ORD-10028",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-07",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Packaging was smashed in transit and the product box is dented."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:83",
+        "fields": {
+          "orderId": "ORD-10070",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-15",
+          "warehouse": "WH-Central",
+          "city": "Birmingham",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Packaging was smashed in transit and the product box is dented."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:87",
+        "fields": {
+          "orderId": "ORD-10235",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-15",
+          "warehouse": "WH-Central",
+          "city": "Birmingham",
+          "courier": "ParcelOne",
+          "category": "Damaged packaging",
+          "complaintText": "Item arrived with damaged packaging, the seal was already broken."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:91",
+        "fields": {
+          "orderId": "ORD-10401",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-15",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "ParcelOne",
+          "category": "Damaged packaging",
+          "complaintText": "Box was crushed on one side and the packaging tape was torn open."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:95",
+        "fields": {
+          "orderId": "ORD-10786",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-15",
+          "warehouse": "WH-Central",
+          "city": "Birmingham",
+          "courier": "CityFreight",
+          "category": "Damaged packaging",
+          "complaintText": "The parcel arrived damaged and the packaging had leaked inside."
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P016"
+      ],
+      "locations": [
+        "WH-North",
+        "WH-Central",
+        "Leeds",
+        "Birmingham"
+      ],
+      "couriers": [
+        "MetroDash",
+        "ParcelOne",
+        "CityFreight"
+      ],
+      "orders": [
+        "ORD-10028",
+        "ORD-10070",
+        "ORD-10235",
+        "ORD-10401",
+        "ORD-10786"
+      ]
+    },
+    "recommendation": {
+      "action": "Audit product Tailored Shorts handling for damaged packaging on the next dispatch cycle and review the 10 complaint orders with the product owner.",
+      "why": "10 of 86 damaged packaging complaints (11.6%) involve product Tailored Shorts. product Tailored Shorts accounts for 2.0% of all orders.",
+      "preventive": "Add a damaged packaging checkpoint to product Tailored Shorts and track its complaint share weekly.",
+      "priority": "normal"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-a2acedb4",
+    "title": "Wide-Leg Trousers will stock out in about 3 days",
+    "type": "inventory_risk",
+    "riskScore": 51.5,
+    "severity": "medium",
+    "businessImpact": "1 products affected, £2,357 of order value exposed, 0 customers involved. Risk score 51.5/100 driven by statistics (94% of that factor) and recency (100% of that factor).",
+    "summary": "Wide-Leg Trousers holds 12 units against a 4.1/day sales rate, leaving 2.9 days of cover and sitting below the 41-unit reorder level.",
+    "verifiedFacts": [
+      {
+        "statement": "Wide-Leg Trousers has 12 units on hand.",
+        "metric": "stock_on_hand",
+        "value": 12
+      },
+      {
+        "statement": "Recent daily sales run at 4.1 units per day.",
+        "metric": "daily_sales_rate",
+        "value": 4.1
+      },
+      {
+        "statement": "Days of cover is 2.9 days.",
+        "metric": "days_of_cover",
+        "value": 2.9
+      },
+      {
+        "statement": "Projected stock-out date is 2026-11-21.",
+        "metric": "projected_stockout",
+        "value": "2026-11-21"
+      },
+      {
+        "statement": "The reorder level is 41 units.",
+        "metric": "reorder_level",
+        "value": 41
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "Replenishment timing for product F-P008 may be too slow for a 4.1/day run rate, leaving 2.9 days of cover.",
+        "confidence": 0.65,
+        "reasoning": "Would be confirmed by open purchase orders with arrival dates after the projected stock-out. Would be rejected if an inbound shipment is already confirmed to land before that date."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "inventory.csv",
+        "rowId": "inventory.csv:9",
+        "fields": {
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "warehouse": "WH-North",
+          "category": "Body",
+          "stock": 12,
+          "dailySalesRate": 4.1,
+          "reorderLevel": 41
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:9",
+        "fields": {
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-09-23",
+          "quantity": 3,
+          "amount": 243.81
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:34",
+        "fields": {
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-09-24",
+          "quantity": 5,
+          "amount": 406.35
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:59",
+        "fields": {
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-09-25",
+          "quantity": 4,
+          "amount": 325.08
+        }
+      },
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:84",
+        "fields": {
+          "productId": "F-P008",
+          "productName": "Wide-Leg Trousers",
+          "date": "2026-09-26",
+          "quantity": 4,
+          "amount": 325.08
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P008"
+      ],
+      "locations": [],
+      "couriers": [],
+      "orders": []
+    },
+    "recommendation": {
+      "action": "Approve an emergency replenishment of 29 units for Wide-Leg Trousers today, or cap new orders to cover the 2.9 days of stock on hand.",
+      "why": "Wide-Leg Trousers has 12 units on hand. Recent daily sales run at 4.1 units per day.",
+      "preventive": "Raise the reorder level for Wide-Leg Trousers above 41 units and review its velocity weekly.",
+      "priority": "normal"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-32bd07d7",
+    "title": "Product quality complaints concentrate on courier MetroDash",
+    "type": "recurring_issue",
+    "riskScore": 36.8,
+    "severity": "low",
+    "businessImpact": "15 complaints affected, £1,144 of order value exposed, 8 customers involved. Risk score 36.8/100 driven by statistics (42% of that factor) and volume (50% of that factor).",
+    "summary": "15 of 32 product quality complaints (46.9%) come from courier MetroDash, which handles 27.0% of orders — a 1.74x lift.",
+    "verifiedFacts": [
+      {
+        "statement": "15 of 32 product quality complaints (46.9%) involve courier MetroDash.",
+        "metric": "complaint_share",
+        "value": 46.9
+      },
+      {
+        "statement": "courier MetroDash accounts for 27.0% of all orders.",
+        "metric": "order_share",
+        "value": 27.0
+      },
+      {
+        "statement": "Lift is 1.74x the order baseline (z=2.54, p=0.0056).",
+        "metric": "lift",
+        "value": 1.74
+      },
+      {
+        "statement": "Statistical test used 15 complaints against a baseline of 219 orders.",
+        "metric": "sample_size",
+        "value": 15
+      },
+      {
+        "statement": "86.7% of the affected rows involve product Tailored Shorts versus 2.0% of all orders (44.0x lift).",
+        "metric": "productId_share",
+        "value": 86.7
+      },
+      {
+        "statement": "100.0% of the affected rows involve courier MetroDash versus 27.0% of all orders (3.7x lift).",
+        "metric": "courier_share",
+        "value": 100.0
+      },
+      {
+        "statement": "66.7% of the affected rows involve city Bristol versus 27.6% of all orders (2.4x lift).",
+        "metric": "city_share",
+        "value": 66.7
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A handling or transit problem specific to courier MetroDash may be driving the concentration 46.9% of these complaints versus 27.0% of orders.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by a site or route audit of courier MetroDash and by complaint notes mentioning handling damage. Would be rejected if the same product complains equally through other couriers or hubs."
+      },
+      {
+        "statement": "Part of the pattern may be a labelling or assignment shift rather than a real change in operations.",
+        "confidence": 0.35,
+        "reasoning": "Would be confirmed by comparing category labels and order-to-courier assignment rules with the period before the lift appeared. Would be rejected if labels and routing rules are unchanged."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:80",
+        "fields": {
+          "orderId": "ORD-10013",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-18",
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "The colour ran in the wash and the fabric shrank."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:81",
+        "fields": {
+          "orderId": "ORD-10028",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-17",
+          "warehouse": "WH-North",
+          "city": "Leeds",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "Defective zipper, the product broke after two uses."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:89",
+        "fields": {
+          "orderId": "ORD-10291",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-17",
+          "warehouse": "WH-Central",
+          "city": "Birmingham",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "Defective zipper, the product broke after two uses."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:92",
+        "fields": {
+          "orderId": "ORD-10568",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-18",
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "Defective zipper, the product broke after two uses."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:93",
+        "fields": {
+          "orderId": "ORD-10669",
+          "productId": "F-P016",
+          "productName": "Tailored Shorts",
+          "date": "2026-11-17",
+          "warehouse": "WH-South",
+          "city": "Bristol",
+          "courier": "MetroDash",
+          "category": "Product quality",
+          "complaintText": "The colour ran in the wash and the fabric shrank."
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P016",
+        "F-P015",
+        "F-P020"
+      ],
+      "locations": [
+        "WH-South",
+        "WH-North",
+        "WH-Central",
+        "Bristol",
+        "Leeds",
+        "Birmingham",
+        "London"
+      ],
+      "couriers": [
+        "MetroDash"
+      ],
+      "orders": [
+        "ORD-10013",
+        "ORD-10028",
+        "ORD-10291",
+        "ORD-10568",
+        "ORD-10669",
+        "ORD-10030",
+        "ORD-10499",
+        "ORD-10484"
+      ]
+    },
+    "recommendation": {
+      "action": "Audit courier MetroDash handling for product quality on the next dispatch cycle and review the 15 complaint orders with the courier owner.",
+      "why": "15 of 32 product quality complaints (46.9%) involve courier MetroDash. courier MetroDash accounts for 27.0% of all orders.",
+      "preventive": "Add a product quality checkpoint to courier MetroDash and track its complaint share weekly.",
+      "priority": "low"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-fab39ba8",
+    "title": "Daily units drop for Ribbed Cardigan on 2026-11-13",
+    "type": "anomaly",
+    "riskScore": 34.4,
+    "severity": "low",
+    "businessImpact": "1 units affected, £221 of order value exposed, 0 customers involved. Risk score 34.4/100 driven by statistics (51% of that factor) and trend (86% of that factor).",
+    "summary": "Units for Ribbed Cardigan reached 2.0 on 2026-11-13 against a median of 14.0 (robust z=-4.0).",
+    "verifiedFacts": [
+      {
+        "statement": "Units on 2026-11-13 were 2.0.",
+        "metric": "observed_value",
+        "value": 2.0
+      },
+      {
+        "statement": "The median for Ribbed Cardigan across 57 days is 14.0.",
+        "metric": "median_value",
+        "value": 14.0
+      },
+      {
+        "statement": "Robust z-score (median/MAD) is -4.0.",
+        "metric": "robust_z",
+        "value": -4.05
+      },
+      {
+        "statement": "Observed volume is 14.3% of the median.",
+        "metric": "median_ratio",
+        "value": 14.3
+      },
+      {
+        "statement": "100.0% of the affected rows fall in 2026-11 versus 36.6% of all orders (2.7x lift).",
+        "metric": "month_share",
+        "value": 100.0
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A short-term supply, listing or tracking gap for product F-P012 may explain the day at 2.0 versus a median of 14.0.",
+        "confidence": 0.5,
+        "reasoning": "Would be confirmed by stock-out logs, listing pauses or feed outages on that day. Would be rejected if stock and listings were healthy and the drop repeats without operational change."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "sales.csv",
+        "rowId": "sales.csv:1288",
+        "fields": {
+          "productId": "F-P012",
+          "productName": "Ribbed Cardigan",
+          "date": "2026-11-13",
+          "quantity": 2,
+          "amount": 221.42
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P012"
+      ],
+      "locations": [],
+      "couriers": [],
+      "orders": []
+    },
+    "recommendation": {
+      "action": "Check whether Ribbed Cardigan had a stock-out, listing change or promotion break on 2026-11-13, and confirm the next units plan with the category manager.",
+      "why": "Units on 2026-11-13 were 2.0. The median for Ribbed Cardigan across 57 days is 14.0.",
+      "preventive": "Add a daily units alert for Ribbed Cardigan at 50% deviation from its rolling median.",
+      "priority": "low"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  },
+  {
+    "id": "fnd-5196fc4e-98bcb963",
+    "title": "Damaged packaging complaints concentrate on city Manchester",
+    "type": "recurring_issue",
+    "riskScore": 25.9,
+    "severity": "low",
+    "businessImpact": "11 complaints affected, £1,605 of order value exposed, 11 customers involved. Risk score 25.9/100 driven by statistics (39% of that factor) and volume (37% of that factor).",
+    "summary": "11 of 86 damaged packaging complaints (12.8%) come from city Manchester, which handles 6.5% of orders — a 1.96x lift.",
+    "verifiedFacts": [
+      {
+        "statement": "11 of 86 damaged packaging complaints (12.8%) involve city Manchester.",
+        "metric": "complaint_share",
+        "value": 12.8
+      },
+      {
+        "statement": "city Manchester accounts for 6.5% of all orders.",
+        "metric": "order_share",
+        "value": 6.5
+      },
+      {
+        "statement": "Lift is 1.96x the order baseline (z=2.35, p=0.0093).",
+        "metric": "lift",
+        "value": 1.96
+      },
+      {
+        "statement": "Statistical test used 11 complaints against a baseline of 53 orders.",
+        "metric": "sample_size",
+        "value": 11
+      },
+      {
+        "statement": "100.0% of the affected rows involve city Manchester versus 6.5% of all orders (15.3x lift).",
+        "metric": "city_share",
+        "value": 100.0
+      },
+      {
+        "statement": "81.8% of the affected rows involve courier MetroDash versus 27.0% of all orders (3.0x lift).",
+        "metric": "courier_share",
+        "value": 81.8
+      },
+      {
+        "statement": "90.9% of the affected rows involve warehouse WH-North versus 30.0% of all orders (3.0x lift).",
+        "metric": "warehouse_share",
+        "value": 90.9
+      }
+    ],
+    "aiHypotheses": [
+      {
+        "statement": "A handling or transit problem specific to city Manchester may be driving the concentration 12.8% of these complaints versus 6.5% of orders.",
+        "confidence": 0.6,
+        "reasoning": "Would be confirmed by a site or route audit of city Manchester and by complaint notes mentioning handling damage. Would be rejected if the same product complains equally through other couriers or hubs."
+      },
+      {
+        "statement": "Part of the pattern may be a labelling or assignment shift rather than a real change in operations.",
+        "confidence": 0.35,
+        "reasoning": "Would be confirmed by comparing category labels and order-to-courier assignment rules with the period before the lift appeared. Would be rejected if labels and routing rules are unchanged."
+      }
+    ],
+    "evidenceRows": [
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:4",
+        "fields": {
+          "orderId": "ORD-10015",
+          "productId": "F-P013",
+          "productName": "Polo Shirt",
+          "date": "2026-10-04",
+          "warehouse": "WH-North",
+          "city": "Manchester",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:10",
+        "fields": {
+          "orderId": "ORD-10099",
+          "productId": "F-P019",
+          "productName": "Wool Scarf",
+          "date": "2026-10-01",
+          "warehouse": "WH-North",
+          "city": "Manchester",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:24",
+        "fields": {
+          "orderId": "ORD-10287",
+          "productId": "F-P007",
+          "productName": "Pleated Skirt",
+          "date": "2026-10-09",
+          "warehouse": "WH-North",
+          "city": "Manchester",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Item arrived with damaged packaging, the seal was already broken."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:27",
+        "fields": {
+          "orderId": "ORD-10364",
+          "productId": "F-P020",
+          "productName": "Sneakers",
+          "date": "2026-10-09",
+          "warehouse": "WH-North",
+          "city": "Manchester",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "Packaging was smashed in transit and the product box is dented."
+        }
+      },
+      {
+        "source": "complaints.csv",
+        "rowId": "complaints.csv:40",
+        "fields": {
+          "orderId": "ORD-10562",
+          "productId": "F-P009",
+          "productName": "Silk Blouse",
+          "date": "2026-10-13",
+          "warehouse": "WH-North",
+          "city": "Manchester",
+          "courier": "MetroDash",
+          "category": "Damaged packaging",
+          "complaintText": "The outer box arrived crushed and the packaging was torn."
+        }
+      }
+    ],
+    "relatedEntities": {
+      "products": [
+        "F-P013",
+        "F-P019",
+        "F-P007",
+        "F-P020",
+        "F-P009",
+        "F-P003",
+        "F-P024",
+        "F-P004",
+        "F-P008",
+        "F-P023"
+      ],
+      "locations": [
+        "Manchester"
+      ],
+      "couriers": [
+        "MetroDash",
+        "ParcelOne",
+        "CityFreight"
+      ],
+      "orders": [
+        "ORD-10015",
+        "ORD-10099",
+        "ORD-10287",
+        "ORD-10364",
+        "ORD-10562",
+        "ORD-10659",
+        "ORD-10740",
+        "ORD-10749",
+        "ORD-10790",
+        "ORD-10363",
+        "ORD-10337"
+      ]
+    },
+    "recommendation": {
+      "action": "Audit city Manchester handling for damaged packaging on the next dispatch cycle and review the 11 complaint orders with the city owner.",
+      "why": "11 of 86 damaged packaging complaints (12.8%) involve city Manchester. city Manchester accounts for 6.5% of all orders.",
+      "preventive": "Add a damaged packaging checkpoint to city Manchester and track its complaint share weekly.",
+      "priority": "low"
+    },
+    "status": "open",
+    "createdAt": "2026-11-18T05:45:10Z"
+  }
+]

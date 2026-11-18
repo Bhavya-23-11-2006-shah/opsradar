@@ -1,0 +1,56 @@
+{
+  "datasetId": "ds-80d8a604e26a",
+  "files": [
+    {
+      "name": "orders_sample.csv",
+      "detectedType": "orders",
+      "rows": 820,
+      "columns": [
+        "orderId",
+        "customerId",
+        "productId",
+        "productName",
+        "date",
+        "promisedDate",
+        "warehouse",
+        "city",
+        "courier",
+        "status",
+        "quantity",
+        "amount"
+      ],
+      "suggestedMapping": {
+        "fileName": "orders_sample.csv",
+        "fileType": "orders",
+        "fields": {
+          "promisedDate": "promisedDate",
+          "amount": "amount",
+          "orderId": "orderId",
+          "quantity": "quantity",
+          "customerId": "customerId",
+          "city": "city",
+          "courier": "courier",
+          "productId": "productId",
+          "productName": "productName",
+          "warehouse": "warehouse",
+          "date": "date",
+          "status": "status"
+        },
+        "confidence": {
+          "promisedDate": 0.99,
+          "amount": 0.99,
+          "orderId": 0.99,
+          "quantity": 0.99,
+          "customerId": 0.99,
+          "city": 0.97,
+          "courier": 0.97,
+          "productId": 0.97,
+          "productName": 0.97,
+          "warehouse": 0.97,
+          "date": 0.94,
+          "status": 0.9
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "datasetId": "demo-fashion-f75196fc4e",
+  "mapping": {
+    "files": [
+      {
+        "fileName": "orders.csv",
+        "fileType": "orders",
+        "fields": {
+          "promisedDate": "promisedDate",
+          "amount": "amount",
+          "orderId": "orderId",
+          "quantity": "quantity",
+          "customerId": "customerId",
+          "city": "city",
+          "courier": "courier",
+          "productId": "productId",
+          "productName": "productName",
+          "warehouse": "warehouse",
+          "date": "date",
+          "status": "status"
+        },
+        "confidence": {
+          "promisedDate": 0.99,
+          "amount": 0.99,
+          "orderId": 0.99,
+          "quantity": 0.99,
+          "customerId": 0.99,
+          "city": 0.97,
+          "courier": 0.97,
+          "productId": 0.97,
+          "productName": 0.97,
+          "warehouse": 0.97,
+          "date": 0.94,
+          "status": 0.9
+        }
+      },
+      {
+        "fileName": "deliveries.csv",
+        "fileType": "deliveries",
+        "fields": {
+          "deliveredDate": "deliveredDate",
+          "shippedDate": "shippedDate",
+          "promisedDate": "promisedDate",
+          "courier": "courier",
+          "city": "city",
+          "orderId": "orderId",
+          "warehouse": "warehouse",
+          "status": "status"
+        },
+        "confidence": {
+          "deliveredDate": 0.99,
+          "shippedDate": 0.99,
+          "promisedDate": 0.99,
+          "courier": 0.99,
+          "city": 0.97,
+          "orderId": 0.97,
+          "warehouse": 0.97,
+          "status": 0.94
+        }
+      },
+      {
+        "fileName": "complaints.csv",
+        "fileType": "complaints",
+        "fields": {
+          "complaintText": "complaintText",
+          "orderId": "orderId",
+          "date": "date",
+          "customerId": "customerId"
+        },
+        "confidence": {
+          "complaintText": 0.99,
+          "orderId": 0.99,
+          "date": 0.97,
+          "customerId": 0.97
+        }
+      },
+      {
+        "fileName": "inventory.csv",
+        "fileType": "inventory",
+        "fields": {
+          "stock": "stock",
+          "dailySalesRate": "dailySalesRate",
+          "reorderLevel": "reorderLevel",
+          "productId": "productId",
+          "category": "category",
+          "productName": "productName",
+          "warehouse": "warehouse"
+        },
+        "confidence": {
+          "stock": 0.99,
+          "dailySalesRate": 0.99,
+          "reorderLevel": 0.99,
+          "productId": 0.99,
+          "category": 0.97,
+          "productName": 0.97,
+          "warehouse": 0.97
+        }
+      },
+      {
+        "fileName": "sales.csv",
+        "fileType": "sales",
+        "fields": {
+          "amount": "amount",
+          "quantity": "quantity",
+          "productId": "productId",
+          "date": "date",
+          "productName": "productName"
+        },
+        "confidence": {
+          "amount": 0.99,
+          "quantity": 0.99,
+          "productId": 0.99,
+          "date": 0.99,
+          "productName": 0.97
+        }
+      },
+      {
+        "fileName": "reviews.csv",
+        "fileType": "reviews",
+        "fields": {
+          "rating": "rating",
+          "complaintText": "reviewText",
+          "productId": "productId",
+          "orderId": "orderId",
+          "date": "date"
+        },
+        "confidence": {
+          "rating": 0.99,
+          "complaintText": 0.99,
+          "productId": 0.99,
+          "orderId": 0.97,
+          "date": 0.94
+        }
+      }
+    ]
+  },
+  "confirmed": true
+}

@@ -1,0 +1,24 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+backend/data/
+backend/.pytest_cache/
+
+# Generated demo data
+backend/demo_data/
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/next-env.d.ts
+frontend/tsconfig.tsbuildinfo
+
+# Env
+.env
+.env.local
+backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
